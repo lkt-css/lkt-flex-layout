@@ -1,0 +1,24 @@
+.lkt-flex-align-center {
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.lkt-flex-align-stretch {
+    -webkit-align-items: stretch;
+    align-items: stretch;
+}
+
+.lkt-flex-justify-center {
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.lkt-flex-justify-end {
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+}
+
+.lkt-flex-justify-space {
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
