@@ -125,33 +125,39 @@
 
 .lkt-flex-row-2 > *,
 .lkt-flex-rows-2 > * {
-    width: calc(50% - var(--lkt-flex--gap));
-    min-width: calc(50% - var(--lkt-flex--gap));
-    max-width: 50%;
+    width: calc(50% - var(--lkt-flex--gap) / 2);
+    min-width: calc(50% - var(--lkt-flex--gap) / 2);
+    max-width: calc(50% - var(--lkt-flex--gap) / 2);
     flex: 11;
 }
 
 .lkt-flex-row-3 > *,
 .lkt-flex-rows-3 > * {
-    width: calc(33.33333333% - var(--lkt-flex--gap));
-    min-width: calc(33.33333333% - var(--lkt-flex--gap));
-    max-width: 33.33333333%;
+    /*width: calc(33.33333333% - var(--lkt-flex--gap));*/
+    /*min-width: calc(33.33333333% - var(--lkt-flex--gap));*/
+    /*max-width: 33.33333333%;*/
+    --col-size: calc(33.33333333% - (var(--lkt-flex--gap) / 1.5));
+    width: var(--col-size);
+    min-width: var(--col-size);
+    max-width: var(--col-size);
     flex: 10;
 }
 
 .lkt-flex-row-4 > *,
 .lkt-flex-rows-4 > * {
-    width: calc(25% - var(--lkt-flex--gap));
-    min-width: calc(25% - var(--lkt-flex--gap));
-    max-width: 25%;
+    --col-size: calc(25% - (var(--lkt-flex--gap) / 1.3));
+    width: var(--col-size);
+    min-width: var(--col-size);
+    max-width: var(--col-size);
     flex: 9;
 }
 
 .lkt-flex-row-5 > *,
 .lkt-flex-rows-5 > * {
-    width: calc(20% - var(--lkt-flex--gap));
-    min-width: calc(20% - var(--lkt-flex--gap));
-    max-width: 20%;
+    --col-size: calc(20% - (var(--lkt-flex--gap) / 1.25));
+    width: var(--col-size);
+    min-width: var(--col-size);
+    max-width: var(--col-size);
     flex: 8;
 }
 
